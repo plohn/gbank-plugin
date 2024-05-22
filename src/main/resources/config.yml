@@ -1,0 +1,31 @@
+currencies:
+  Coins:
+    name: "Coins"
+    prefix: "$"
+  Gems:
+    name: "Gems"
+    prefix: "G"
+#----
+storage:
+  type: "JSON"  # Options: "JSON", "MYSQL"
+  json:
+    file: "player_data.json"
+  mysql:
+    database: "yourdb"
+    table: "gbank"
+    address: "localhost"
+    port: "3306"
+    username: "username"
+    password: "password"
+#----
+permissions:
+  balance: "gbank.balance"
+  bank: "gbank.bank"
+  pay: "gbank.pay"
+  reload: "gbank.reload"
+#----
+currency_rewards:
+  interval_seconds: 600  # Reward interval (e.g., every 10 minutes)
+  rewards:
+    Coins: 10.0
+    Gems: 2.0

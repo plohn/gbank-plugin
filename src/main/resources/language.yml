@@ -1,0 +1,39 @@
+# Placeholders:
+# %player% - The name of a player
+# %currency% - The name of a currency
+# %prefix% - The prefix of a currency
+# %amount% - The amount of currency
+# %sender% - The name of the sender
+# %tax_amount% - The amount of tax deducted
+general:
+  no_permission: "You do not have permission to execute this command."
+  player_not_found: "Player %player% not found."
+  invalid_amount: "Invalid amount specified."
+  not_enough_amount: "Player %player% has not enough %currency%"
+  config_reloaded: "Configuration reloaded successfully."
+  invalid_currency: "Currency %currency% does not exist."
+  invalid_player: "You cannot send money to your self"
+balance:
+  header: "Your Balances:"
+  balance_format: "%prefix%%amount% %currency%"
+  view_balance: "Your balance for %currency% is %prefix%%amount%."
+  player_balance: "%player%'s balance for %currency% is %prefix%%amount%."
+bank:
+  give_success: "Successfully gave %prefix%%amount% %currency% to %player%."
+  set_success: "Successfully set %player%'s balance to %prefix%%amount% %currency%."
+  take_success: "Successfully took %prefix%%amount% %currency% from %player%."
+  offline_notification: "When %player% joins, they will be notified of the change in their balance."
+pay:
+  payment_success: "You have paid %player% %prefix%%amount% %currency%."
+  payment_received: "You received %prefix%%amount% %currency% from %sender%."
+  insufficient_funds: "You do not have enough %currency% to make this payment."
+  tax_deducted: "A tax of %prefix%%tax_amount% %currency% has been deducted from the payment."
+  offline_notification: "When %player% joins, they will be notified of the change in their balance."
+ui:
+  title: "Currency Balance"
+  next_page: "Next Page"
+  prev_page: "Previous Page"
+rewards:
+  reward_received: "You have received your periodic reward of %prefix%%amount% %currency%."
+errors:
+  command_error: "An error occurred while executing the command. Please try again."

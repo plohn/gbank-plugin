@@ -1,0 +1,4 @@
+name: GBank
+version: '${project.version}'
+main: me.plohn.gbank.GBank
+api-version: '1.20'
